@@ -64,14 +64,14 @@ body {
 
 .container .form form {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 1rem;
 }
 
 .container .form form .email {
   width: 280px;
   border: 0.0625rem solid var(--PaleBlue);
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 2rem;
   outline: none;
 }
@@ -90,6 +90,11 @@ body {
   border: none;
   border-radius: 2rem;
   cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.container .form form .submit:hover {
+  opacity: 0.9;
 }
 
 .container .figure {
@@ -113,9 +118,53 @@ body {
   border-radius: 50%;
   border: 0.0625rem solid var(--PaleBlue);
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.container .icons-social i:hover {
+  background-color: var(--Blue);
+  color: var(--White);
 }
 
 .container .copyright {
   font-size: 0.8rem;
   color: var(--Gray);
+}
+
+/**********ERROR**********/
+.error-email {
+  font-size: 0.8rem;
+  padding: 0.5rem 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--LightRed);
+}
+
+.active {
+  display: none;
+}
+/*************************/
+
+@media (max-width: 540px) {
+  .container {
+    text-align: center;
+  }
+
+  .container .form,
+  .container .form form .input-group {
+    width: 100%;
+  }
+  .container .form form {
+    flex-direction: column;
+  }
+
+  .container .form form .input-group .email,
+  .container .form form .submit {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .container .figure {
+    width: 100%;
+  }
 }

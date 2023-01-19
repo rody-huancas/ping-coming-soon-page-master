@@ -26,12 +26,15 @@
         <span class="notified"> Subscribe and get notified </span>
         <div class="form">
           <form>
-            <input
-              type="email"
-              class="email"
-              id="email"
-              placeholder="Your email address..."
-            />
+            <div class="input-group">
+              <input
+                type="email"
+                class="email error"
+                id="email"
+                placeholder="Your email address..."
+              />
+              <p class="error-email active">Please provide a valid address.</p>
+            </div>
             <input type="submit" value="Notify Me" class="submit" id="submit" />
           </form>
         </div>
@@ -55,5 +58,8 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+
+    <!-- js -->
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
