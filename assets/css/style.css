@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --verydarkblue: hsl(209, 33%, 12%);
+  --White: #ffffff;
+  --FontSize: 20px;
+  --FontLibre: "Libre Franklin", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--FontLibre);
+  color: var(--verydarkblue);
+}
+
+.main {
+  max-width: 1024px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.container .logo {
+  width: 4.3rem;
+}
+
+.container .title {
+  font-weight: 300;
+  font-size: 2.1875rem;
+  color: var(--Gray);
+}
+
+.container .title span {
+  font-weight: 700;
+  color: var(--verydarkblue);
+}
+
+.container .notified {
+  margin-top: -1.2rem;
+  font-size: var(--FontSize);
+}
+
+.container .form form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .form form .email {
+  width: 280px;
+  border: 0.0625rem solid var(--PaleBlue);
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  outline: none;
+}
+
+.container .form form .email::placeholder {
+  color: var(--PaleBlue);
+}
+
+.container .form form .submit {
+  width: 150px;
+  background-color: var(--Blue);
+  color: var(--White);
+  font-weight: 500;
+  padding: 0.8rem;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.container .figure {
+  width: 450px;
+  margin-top: 2rem;
+}
+
+.container .icons-social {
+  display: flex;
+  gap: 1.5rem;
+  color: var(--Blue);
+}
+
+.container .icons-social i {
+  margin-top: 2rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0.0625rem solid var(--PaleBlue);
+  cursor: pointer;
+}
+
+.container .copyright {
+  font-size: 0.8rem;
+  color: var(--Gray);
+}
